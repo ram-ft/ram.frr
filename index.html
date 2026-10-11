@@ -1,0 +1,317 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ramm.frr — Frontend Developer</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <div class="nav-left">
+                <span class="nav-logo">
+                    <span class="nav-logo-letter" style="--i:0">R</span><span class="nav-logo-letter" style="--i:1">A</span><span class="nav-logo-letter" style="--i:2">M</span><span class="nav-logo-letter" style="--i:3">.</span><span class="nav-logo-letter" style="--i:4">F</span><span class="nav-logo-letter" style="--i:5">R</span>
+                </span>
+            </div>
+            <div class="nav-right">
+                <a href="https://dribbble.com/Sayzz" target="_blank" rel="noopener noreferrer">Dribbble</a>
+                <span>/</span>
+                <a href="https://github.com/ram-ft" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== INSTAGRAM BANNER ===== -->
+    <div id="ig-banner-backdrop" class="ig-banner-backdrop"></div>
+    <div id="ig-banner" class="ig-banner">
+        <div class="ig-banner-content">
+            <div class="ig-banner-icon">
+                <i class="fab fa-instagram"></i>
+            </div>
+            <span class="ig-banner-text">Follow me on Instagram</span>
+            <div class="ig-banner-buttons">
+                <a href="https://www.instagram.com/ramm.frr/" target="_blank" rel="noopener noreferrer" class="ig-banner-btn">
+                    Follow
+                </a>
+                <button class="ig-banner-ignore" id="ig-banner-ignore" aria-label="Ignore">
+                    Ignore
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== MUSIC PLAYER ===== -->
+    <audio id="bg-music" loop="">
+        <source src="media/The%20Last%20of%20Us.mp3" type="audio/mpeg">
+    </audio>
+    <button id="music-toggle" class="music-toggle" aria-label="Toggle music">
+        <svg class="music-icon play-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z"></path>
+        </svg>
+        <svg class="music-icon pause-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"></path>
+        </svg>
+        <span class="music-text">Music</span>
+    </button>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+
+        <!-- LEFT -->
+        <div class="hero-left">
+            <div class="avatar-group">
+                <div class="avatar">
+                    <img src="https://api.dicebear.com/7.x/notionists/svg?seed=ramm&amp;backgroundColor=d4cfc7" alt="ramm.frr">
+                </div>
+                <div class="nametag">ramm.frr ✦</div>
+            </div>
+
+            <h1 class="hero-title">
+                "Code is the closest<br>thing we have to<br><em>a superpower."</em>
+            </h1>
+
+            <div class="hero-meta">
+                <p class="hero-sub">Frontend developer turning ideas into clean, fast, and beautiful web experiences.</p>
+                <a href="work/index.html" class="hero-btn" data-tooltip="See my selected projects">
+                    Latest Work
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"></path></svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="hero-right" aria-hidden="true">
+            <div class="typo-scroll">
+                <div class="typo-col tc-1">
+                    <div class="typo-track">
+                        <span>React</span><span>Next.js</span><span>TypeScript</span><span>Tailwind</span><span>Vue</span><span>Figma</span>
+                        <span>React</span><span>Next.js</span><span>TypeScript</span><span>Tailwind</span><span>Vue</span><span>Figma</span>
+                    </div>
+                </div>
+                <div class="typo-col tc-2">
+                    <div class="typo-track">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Sass</span><span>Git</span><span>UI/UX</span>
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Sass</span><span>Git</span><span>UI/UX</span>
+                    </div>
+                </div>
+                <div class="typo-col tc-3">
+                    <div class="typo-track">
+                        <span>Vite</span><span>Node</span><span>REST</span><span>Design</span><span>Motion</span><span>Web</span>
+                        <span>Vite</span><span>Node</span><span>REST</span><span>Design</span><span>Motion</span><span>Web</span>
+                    </div>
+                </div>
+            </div>
+            <!-- fade top & bottom -->
+            <div class="typo-fade-top"></div>
+            <div class="typo-fade-bot"></div>
+        </div>
+
+    </section>
+
+    <!-- ===== LOGO LOOP ===== -->
+    <section class="logoloop">
+        <div class="logoloop-track">
+            <a class="logo-item" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><i class="fab fa-html5"></i><span>HTML5</span></a>
+            <a class="logo-item" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><i class="fab fa-css3-alt"></i><span>CSS3</span></a>
+            <a class="logo-item" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><i class="fab fa-js"></i><span>JavaScript</span></a>
+            <a class="logo-item" href="https://react.dev" target="_blank"><i class="fab fa-react"></i><span>React</span></a>
+            <a class="logo-item" href="https://nextjs.org" target="_blank"><i class="fas fa-layer-group"></i><span>Next.js</span></a>
+            <a class="logo-item" href="https://www.typescriptlang.org" target="_blank"><i class="fas fa-code"></i><span>TypeScript</span></a>
+            <a class="logo-item" href="https://vuejs.org" target="_blank"><i class="fab fa-vuejs"></i><span>Vue.js</span></a>
+            <a class="logo-item" href="https://tailwindcss.com" target="_blank"><i class="fas fa-wind"></i><span>Tailwind</span></a>
+            <a class="logo-item" href="https://sass-lang.com" target="_blank"><i class="fab fa-sass"></i><span>Sass</span></a>
+            <a class="logo-item" href="https://git-scm.com" target="_blank"><i class="fab fa-git-alt"></i><span>Git</span></a>
+            <a class="logo-item" href="https://figma.com" target="_blank"><i class="fab fa-figma"></i><span>Figma</span></a>
+            <a class="logo-item" href="https://nodejs.org" target="_blank"><i class="fab fa-node-js"></i><span>Node.js</span></a>
+            <!-- duplicate set for seamless loop -->
+            <a class="logo-item" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><i class="fab fa-html5"></i><span>HTML5</span></a>
+            <a class="logo-item" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><i class="fab fa-css3-alt"></i><span>CSS3</span></a>
+            <a class="logo-item" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><i class="fab fa-js"></i><span>JavaScript</span></a>
+            <a class="logo-item" href="https://react.dev" target="_blank"><i class="fab fa-react"></i><span>React</span></a>
+            <a class="logo-item" href="https://nextjs.org" target="_blank"><i class="fas fa-layer-group"></i><span>Next.js</span></a>
+            <a class="logo-item" href="https://www.typescriptlang.org" target="_blank"><i class="fas fa-code"></i><span>TypeScript</span></a>
+            <a class="logo-item" href="https://vuejs.org" target="_blank"><i class="fab fa-vuejs"></i><span>Vue.js</span></a>
+            <a class="logo-item" href="https://tailwindcss.com" target="_blank"><i class="fas fa-wind"></i><span>Tailwind</span></a>
+            <a class="logo-item" href="https://sass-lang.com" target="_blank"><i class="fab fa-sass"></i><span>Sass</span></a>
+            <a class="logo-item" href="https://git-scm.com" target="_blank"><i class="fab fa-git-alt"></i><span>Git</span></a>
+            <a class="logo-item" href="https://figma.com" target="_blank"><i class="fab fa-figma"></i><span>Figma</span></a>
+            <a class="logo-item" href="https://nodejs.org" target="_blank"><i class="fab fa-node-js"></i><span>Node.js</span></a>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="services">
+        <div class="services-inner">
+            <div class="services-head">
+                <h2 class="services-title">
+                    Collaborate with <em>brands</em> and agencies<br>
+                    to create <strong>impactful results.</strong>
+                </h2>
+                <span class="badge" data-tooltip="My primary expertise">Frontend</span>
+            </div>
+
+            <div class="services-grid">
+                <div class="service">
+                    <div class="service-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18M9 21V9"></path></svg>
+                    </div>
+                    <h3>UX &amp; UI</h3>
+                    <p>Designing interfaces that are intuitive, efficient, and enjoyable to use.</p>
+                </div>
+                <div class="service">
+                    <div class="service-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"></rect><path d="M12 18h.01"></path></svg>
+                    </div>
+                    <h3>Web &amp; Mobile App</h3>
+                    <p>Transforming ideas into exceptional web and mobile app experiences.</p>
+                </div>
+                <div class="service">
+                    <div class="service-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4l3 3"></path></svg>
+                    </div>
+                    <h3>Design &amp; Creative</h3>
+                    <p>Crafting visually stunning designs that connect with your audience.</p>
+                </div>
+                <div class="service">
+                    <div class="service-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    </div>
+                    <h3>Development</h3>
+                    <p>Bringing your vision to life with the latest technology and design trends.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WORK ===== -->
+    <section class="work" id="work">
+        <div class="work-inner">
+
+            <div class="work-head">
+                <span class="eyebrow">Selected Work</span>
+                <h2 class="work-title">Featured <em>Projects</em></h2>
+            </div>
+
+            <div class="work-grid">
+
+                <a href="https://typestack.vercel.app/" target="_blank" rel="noopener noreferrer" class="wcard">
+                    <div class="wcard-left">
+                        <span class="wcard-num">01</span>
+                        <div class="wcard-content">
+                            <h3 class="wcard-title">TypeStack</h3>
+                            <p class="wcard-desc">A curated font library for designers and developers to discover and explore typography.</p>
+                        </div>
+                    </div>
+                    <div class="wcard-right">
+                        <div class="wcard-tags">
+                            <span>React</span>
+                            <span>Next.js</span>
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="wcard-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"></path></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://ellie0.vercel.app/" target="_blank" rel="noopener noreferrer" class="wcard">
+                    <div class="wcard-left">
+                        <span class="wcard-num">02</span>
+                        <div class="wcard-content">
+                            <h3 class="wcard-title">ELLIE</h3>
+                            <p class="wcard-desc">Freesound API browser for discovering and exploring high-quality audio samples and sound effects.</p>
+                        </div>
+                    </div>
+                    <div class="wcard-right">
+                        <div class="wcard-tags">
+                            <span>React</span>
+                            <span>REST API</span>
+                            <span>Tailwind</span>
+                        </div>
+                        <div class="wcard-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"></path></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://napkin0.vercel.app/" target="_blank" rel="noopener noreferrer" class="wcard">
+                    <div class="wcard-left">
+                        <span class="wcard-num">03</span>
+                        <div class="wcard-content">
+                            <h3 class="wcard-title">NAPKIN</h3>
+                            <p class="wcard-desc">Open-source dating platform connecting people through meaningful conversations and shared interests.</p>
+                        </div>
+                    </div>
+                    <div class="wcard-right">
+                        <div class="wcard-tags">
+                            <span>Next.js</span>
+                            <span>TypeScript</span>
+                            <span>Supabase</span>
+                        </div>
+                        <div class="wcard-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"></path></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://sona0.vercel.app/" target="_blank" rel="noopener noreferrer" class="wcard">
+                    <div class="wcard-left">
+                        <span class="wcard-num">04</span>
+                        <div class="wcard-content">
+                            <h3 class="wcard-title">SONA</h3>
+                            <p class="wcard-desc">Modern music streaming platform with curated playlists and personalized recommendations.</p>
+                        </div>
+                    </div>
+                    <div class="wcard-right">
+                        <div class="wcard-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="wcard-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"></path></svg>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta">
+        <canvas id="cta-canvas"></canvas>
+        <div class="cta-inner">
+            <div class="cta-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <h2 class="cta-title">
+                Tell me about <em>your next</em><br>project
+            </h2>
+            <div class="cta-btns">
+                <a href="mailto:itsram.ft@gmail.com" class="cta-btn dark" data-tooltip="Send me an email">
+                    <i class="fas fa-envelope"></i> Email Me
+                </a>
+                <a href="7702947075" class="cta-btn light" data-tooltip="Message on WhatsApp">WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <span>© 2026 All rights reserved.</span>
+        <div class="footer-links">
+            <a href="https://dribbble.com/Sayzz" target="_blank" rel="noopener noreferrer">Dribbble</a>
+            <span>/</span>
+            <a href="https://github.com/ram-ft" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+
+</body></html>

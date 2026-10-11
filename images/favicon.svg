@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Dark rounded background -->
+  <rect width="32" height="32" rx="8" fill="#1a1a18"/>
+  <!-- Dot accent top-right -->
+  <circle cx="26" cy="6" r="2" fill="#faf9f6" opacity="0.4"/>
+  <!-- "r" letter -->
+  <text
+    x="7"
+    y="22"
+    font-family="Inter, -apple-system, sans-serif"
+    font-weight="800"
+    font-size="18"
+    fill="#faf9f6"
+    letter-spacing="-1"
+  >rf</text>
+</svg>
