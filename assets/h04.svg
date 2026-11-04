@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 70" width="900" height="70">
+<defs>
+<filter id="r" x="-2%" y="-10%" width="104%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="14" result="t"/><feDisplacementMap in="SourceGraphic" in2="t" scale="2.4"/></filter>
+<filter id="g" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="17"/><feColorMatrix values="0 0 0 0 0.3  0 0 0 0 0.28  0 0 0 0 0.25  0 0 0 0.16 0"/></filter>
+</defs>
+<rect width="900" height="70" fill="#f6f3ec"/>
+<rect width="900" height="70" filter="url(#g)"/>
+<g filter="url(#r)"><text x="26" y="40" font-family="'Segoe Print','Bradley Hand','Chalkboard SE','Comic Sans MS','Marker Felt',cursive" font-size="16" fill="#3d3d3a" text-anchor="start" opacity="0.5" >04</text><text x="70" y="42" font-family="'Segoe Print','Bradley Hand','Chalkboard SE','Comic Sans MS','Marker Felt',cursive" font-size="32" fill="#3d3d3a" text-anchor="start" opacity="0.9" >skills</text><path d="M61.5,52.2 L78.4,52.4 L95.6,51.2 L113.7,51.0 L128.7,49.8 L146.8,49.4 L163.7,48.9 L180.4,49.8" fill="none" stroke="#3d3d3a" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/><path d="M63.7,53.2 L80.7,53.7 L97.1,52.4 L114.6,53.0 L132.6,52.5 L147.4,52.5 L166.2,51.8 L182.3,52.9" fill="none" stroke="#3d3d3a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/><path d="M64.1,59.4 L79.7,58.7 L94.3,59.0 L110.3,58.9 L125.0,57.6 L141.0,57.8 L155.8,58.1" fill="none" stroke="#3d3d3a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/><path d="M60.6,57.2 L77.3,57.1 L92.4,56.8 L109.8,56.9 L127.1,57.1 L142.6,57.1 L158.1,58.5" fill="none" stroke="#3d3d3a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/></g>
+</svg>

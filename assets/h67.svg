@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 70" width="900" height="70">
+<defs>
+<filter id="r" x="-2%" y="-10%" width="104%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="77" result="t"/><feDisplacementMap in="SourceGraphic" in2="t" scale="2.4"/></filter>
+<filter id="g" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="80"/><feColorMatrix values="0 0 0 0 0.3  0 0 0 0 0.28  0 0 0 0 0.25  0 0 0 0.16 0"/></filter>
+</defs>
+<rect width="900" height="70" fill="#f6f3ec"/>
+<rect width="900" height="70" filter="url(#g)"/>
+<g filter="url(#r)"><text x="26" y="40" font-family="'Segoe Print','Bradley Hand','Chalkboard SE','Comic Sans MS','Marker Felt',cursive" font-size="16" fill="#3d3d3a" text-anchor="start" opacity="0.5" >67</text><text x="70" y="42" font-family="'Segoe Print','Bradley Hand','Chalkboard SE','Comic Sans MS','Marker Felt',cursive" font-size="32" fill="#3d3d3a" text-anchor="start" opacity="0.9" >testing</text><path d="M58.4,52.5 L73.2,51.8 L88.1,53.0 L103.5,51.2 L119.6,52.5 L134.8,52.1 L148.6,52.1 L164.6,52.1 L179.1,51.7 L196.2,52.7" fill="none" stroke="#3d3d3a" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/><path d="M60.5,51.7 L75.3,50.9 L90.2,52.4 L105.6,52.0 L121.0,52.7 L135.3,50.8 L151.2,52.3 L165.7,51.1 L182.0,50.8 L196.3,52.1" fill="none" stroke="#3d3d3a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/><path d="M62.8,57.6 L80.0,56.4 L96.0,57.4 L111.8,56.8 L128.9,58.1 L145.3,58.6 L162.6,59.4 L179.8,57.8" fill="none" stroke="#3d3d3a" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/><path d="M64.1,56.1 L79.3,56.9 L96.4,57.2 L111.2,57.9 L126.5,58.3 L143.7,57.8 L158.5,57.7 L174.6,57.8" fill="none" stroke="#3d3d3a" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/></g>
+</svg>
